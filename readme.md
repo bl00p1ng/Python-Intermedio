@@ -83,6 +83,12 @@ super_dict = {
 
 ![Sintaxis List Comprehensions](https://i.ibb.co/VS1Rmj4/sintaxis-list-comprehensions.png)
 
+**Cómo funcionan**
+
+![Cómo funcionan los list comprehensions](https://i.ibb.co/3vvyp12/1-z-J0-Xf-N1fk-WSvll2-Bg8o46g.png)
+
+[Más información sobre el funcionamiento de los List Comprehensions](https://towardsdatascience.com/all-about-python-list-comprehension-14dd979ec0d1)
+
 _**Ejemplo:**_
 
 ```python
