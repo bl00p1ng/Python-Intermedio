@@ -12,6 +12,7 @@ Apuntes y código del Curso de Python Intermedio
     - [Clase 6. Instalación de dependencias con pip](#clase-6-instalación-de-dependencias-con-pip)
   - [📚 Módulo 3. Alternativa a los ciclos: comprehensions](#-módulo-3-alternativa-a-los-ciclos-comprehensions)
     - [Clase 8. Listas y diccionarios anidados](#clase-8-listas-y-diccionarios-anidados)
+    - [Clase 9. List Comprehensions](#clase-9-list-comprehensions)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -74,4 +75,16 @@ super_dict = {
     "integer_nums": [-1, -2, 0, 1, 2],
     "floating_nums": [1.1, 4.5, 6.43]
 }
+```
+
+### Clase 9. List Comprehensions
+
+**Sintaxis**
+
+![Sintaxis List Comprehensions](https://i.ibb.co/VS1Rmj4/sintaxis-list-comprehensions.png)
+
+_**Ejemplo:**_
+
+```python
+squares = [i**2 for i in range(1, 101) if i % 3 != 0]
 ```
