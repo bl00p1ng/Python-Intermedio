@@ -13,6 +13,7 @@ Apuntes y código del Curso de Python Intermedio
   - [📚 Módulo 3. Alternativa a los ciclos: comprehensions](#-módulo-3-alternativa-a-los-ciclos-comprehensions)
     - [Clase 8. Listas y diccionarios anidados](#clase-8-listas-y-diccionarios-anidados)
     - [Clase 9. List Comprehensions](#clase-9-list-comprehensions)
+    - [Clase 10. Dictionary comprehensions](#clase-10-dictionary-comprehensions)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -93,4 +94,16 @@ _**Ejemplo:**_
 
 ```python
 squares = [i**2 for i in range(1, 101) if i % 3 != 0]
+```
+
+### Clase 10. Dictionary comprehensions
+
+**Sintaxis**
+
+![Sintaxis Dictionary comprehensions](https://i.ibb.co/v1JfBts/sintaxis-Dictionary-comprehensions.png)
+
+_**Ejemplo:_*
+
+```python
+my_dict = {i: i**3 for i in range(1, 101) if i % 3 != 0}
 ```
