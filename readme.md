@@ -9,6 +9,7 @@ Apuntes y código del Curso de Python Intermedio
     - [Clase 2. El Zen de Python](#clase-2-el-zen-de-python)
   - [📚 Módulo 2. Entorno virtual](#-módulo-2-entorno-virtual)
     - [Clase 5. El primer paso profesional: creación de un entorno](#clase-5-el-primer-paso-profesional-creación-de-un-entorno)
+    - [Clase 6. Instalación de dependencias con pip](#clase-6-instalación-de-dependencias-con-pip)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -43,3 +44,18 @@ Son los 20 principios del desarrollo de software más importantes de este lengua
 
 Para salir del entorno virtual se usa el comando `deactivate`
 
+### Clase 6. Instalación de dependencias con pip
+
+**Compartir dependencias de un proyecto**
+
+```bash
+pip freeze > requeriments.txt
+```
+
+Esto guardará en el archivo `requeriments.txt` las dependencias del proyecto con sus respectivas versiones.
+
+Luego para que la persona a la que se comparta el proyecto pueda instalar las dependencias tiene que usar el comando:
+
+```bash
+piṕ install -r requeriments.txt
+```
