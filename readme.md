@@ -14,6 +14,8 @@ Apuntes y código del Curso de Python Intermedio
     - [Clase 8. Listas y diccionarios anidados](#clase-8-listas-y-diccionarios-anidados)
     - [Clase 9. List Comprehensions](#clase-9-list-comprehensions)
     - [Clase 10. Dictionary comprehensions](#clase-10-dictionary-comprehensions)
+  - [📚 Módulo 4. Conceptos avanzados de funciones](#-módulo-4-conceptos-avanzados-de-funciones)
+    - [Clase 11. Funciones anónimas: lambda](#clase-11-funciones-anónimas-lambda)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -102,8 +104,26 @@ squares = [i**2 for i in range(1, 101) if i % 3 != 0]
 
 ![Sintaxis Dictionary comprehensions](https://i.ibb.co/v1JfBts/sintaxis-Dictionary-comprehensions.png)
 
-_**Ejemplo:_*
+_**Ejemplo:**_
 
 ```python
 my_dict = {i: i**3 for i in range(1, 101) if i % 3 != 0}
 ```
+
+## 📚 Módulo 4. Conceptos avanzados de funciones
+
+### Clase 11. Funciones anónimas: lambda
+
+Son funciones que **no tienen un identificador**. No es necesario usar `return` en este tipo de funciones.
+
+**Sintaxis**
+
+`lambda arguments: expression`
+
+**ℹ Nota:** en Python las funciones lambda sólo pueden tener *una sola línea de código*.
+
+Dado que las funcione anónimas no tienen un identificador, para invocarlas se guardan en una variable que va a contener un objeto de tipo `function`.
+
+_**Ejemplo:**_
+
+![Ejemplo lambda](https://i.ibb.co/6HQBS6H/ejemplo-lambda.png)
