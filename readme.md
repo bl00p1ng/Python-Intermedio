@@ -10,6 +10,8 @@ Apuntes y código del Curso de Python Intermedio
   - [📚 Módulo 2. Entorno virtual](#-módulo-2-entorno-virtual)
     - [Clase 5. El primer paso profesional: creación de un entorno](#clase-5-el-primer-paso-profesional-creación-de-un-entorno)
     - [Clase 6. Instalación de dependencias con pip](#clase-6-instalación-de-dependencias-con-pip)
+  - [📚 Módulo 3. Alternativa a los ciclos: comprehensions](#-módulo-3-alternativa-a-los-ciclos-comprehensions)
+    - [Clase 8. Listas y diccionarios anidados](#clase-8-listas-y-diccionarios-anidados)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -19,14 +21,7 @@ Son los 20 principios del desarrollo de software más importantes de este lengua
 
 **Cómo ver el Zen de Python**
 
-1. Abrir la consola interactiva de Python
-2. Importar `this`, este es el módulo que contiene el Zen de Python. Esto se hace ejecutando la siguiente línea en la consola: `import this`
-
-**El Zen de Python en español**
-
-![Zen de Python en Español parte 1](https://i.ibb.co/M2ZHrM7/zen-python-1.png)
-![Zen de Python en Español parte 2](https://i.ibb.co/N6k4brF/zen-python-2.png)
-![Zen de Python en Español parte 3](https://i.ibb.co/cTB5gf6/zen-python-3.png)
+1. Abrir la consola interactiva de PythonClase 6. Instalación de dependencias con pip
 ![Zen de Python en Español parte 4](https://i.ibb.co/3zz1xMv/zen-python-4.png)
 
 ## 📚 Módulo 2. Entorno virtual
@@ -58,4 +53,25 @@ Luego para que la persona a la que se comparta el proyecto pueda instalar las de
 
 ```bash
 piṕ install -r requeriments.txt
+```
+
+## 📚 Módulo 3. Alternativa a los ciclos: comprehensions
+
+### Clase 8. Listas y diccionarios anidados
+
+Se pueden tener listas que guarden diccionarios y diccionarios que guarden listas.
+
+```python
+super_list = [
+        {"firstname": "Andrés", "lastname": "López"},
+        {"firstname": "Tony", "lastname": "Stark"},
+        {"firstname": "Peter", "lastname": "Parker"},
+        {"firstname": "Hana", "lastname": "Uzaki"},
+    ]
+
+super_dict = {
+    "natural_nums": [1, 2, 3, 4, 5],
+    "integer_nums": [-1, -2, 0, 1, 2],
+    "floating_nums": [1.1, 4.5, 6.43]
+}
 ```
