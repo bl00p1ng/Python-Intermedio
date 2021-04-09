@@ -26,6 +26,10 @@ Apuntes y código del Curso de Python Intermedio de Platzi
       - [Syntax Error](#syntax-error)
       - [Exception](#exception)
     - [Clase 15. Debugging](#clase-15-debugging)
+    - [Clase 16. Manejo de excepciones](#clase-16-manejo-de-excepciones)
+      - [Try/Except](#tryexcept)
+      - [raise](#raise)
+    - [Finally](#finally)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -234,3 +238,37 @@ Es una técnica que se usa para encontrar la fuente de los **errores de lógica*
 **Step Over:** ejecutar la línea que sigue.
 
 **Step Into:** permite "entrar" en una función para revisar su ejecución línea por línea.
+
+### Clase 16. Manejo de excepciones
+
+#### Try/Except
+
+Permiten manejar excepciones y ejecutar un fragmento de código determinado en caso de que ocurra una excepción. La forma en que funciona es que se pone dentro de `try` el código que puede ser susceptible a lanzar excepciones y luego se maneja la excepción con `except`. Lo que hace `except` es que si ocurre un error dentro del bloque de código del try, se deja de ejecutar el código del try y se ejecuta lo que se haya definido en el Except.
+
+_**Ejemplo:**_
+
+![Ejemplo de try/except](https://i.ibb.co/C5JZkBN/try-except-ejemplo.png)
+
+#### raise
+
+Cuando Python no nos informa de un error se puede usar `raise` para elevar una excepción de acuerdo al caso.
+
+_**Ejemplo:**_
+
+![Ejemplo de raise](https://i.ibb.co/zFFcykb/raise-ejemplo.png)
+
+### Finally
+
+Se usa al final de una estructura try/except para hacer cosas como por ejemplo:
+
+- Cerrar un archivo.
+- Cerrar una conexión a una base de datos.
+- Liberar recursos externos.
+
+Estos usos se deben a que si ocurre una excepción y se interrumpe abruptamente el programa mientras se trabajaba un archivo u se efectuá una conexión con una DB, dicho archivo y DB puede dañarse.
+
+_**Ejemplo:**_
+
+![Ejemplo finally](https://i.ibb.co/2K0F1XQ/finally-ejemplo.png)
+
+`finally` se ejecuta sin importar que ocurra o no una excepción, además no se usa mucho.
