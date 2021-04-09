@@ -272,3 +272,6 @@ _**Ejemplo:**_
 ![Ejemplo finally](https://i.ibb.co/2K0F1XQ/finally-ejemplo.png)
 
 `finally` se ejecuta sin importar que ocurra o no una excepción, además no se usa mucho.
+
+
+
