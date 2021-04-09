@@ -21,6 +21,10 @@ Apuntes y código del Curso de Python Intermedio de Platzi
       - [Map](#map)
       - [Reduce](#reduce)
     - [Clase 13. Proyecto: filtrando datos](#clase-13-proyecto-filtrando-datos)
+  - [📚 Módulo 5. Manejo de errores](#-módulo-5-manejo-de-errores)
+    - [Clase 14. Los errores en el código](#clase-14-los-errores-en-el-código)
+      - [Syntax Error](#syntax-error)
+      - [Exception](#exception)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -200,3 +204,23 @@ Se usa el operador `|` entre el diccionario original y el que se va a concatenar
 ```python
 old_people = list(map(lambda worker: worker | {"old": worker["age"] > 70}, DATA))
 ```
+
+
+## 📚 Módulo 5. Manejo de errores
+
+### Clase 14. Los errores en el código
+
+**Tipos de errores**
+
+![Tipos de errores](https://i.ibb.co/V2m6Qck/tipos-errores-python.png)
+
+#### Syntax Error
+
+Ocurren cuando el código esta mal escribir. Por ejemplo si en lugar de escribir `for` se escribe `far`. Cuando ocurren este tipo de errores el código nunca alcanza a ejecutarse pues cuando Python encuentra un error de sintaxis en el código no ejecuta el código y en su lugar muestra un mensaje de error en la pantalla.
+
+
+#### Exception
+
+En este tipo de errores el código que esta antes de la excepción si se alcanza a ejecutar y dicha ejecución se interrumpe cuando se lanza una excepción. Cuando se "lanza" dicha dicha excepción Python muestra muestra un menaje de error llamado **traceback** que se lee de abajo hacia arriba.
+
+Si ocurre una excepción y esta no se maneja, Python "eleva" dicha excepción a un scope superior tratando de encontrar un punto en que se le haga manejo a la excepción. Si no lo encuentra muestra el Traceback.
