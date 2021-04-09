@@ -20,6 +20,7 @@ Apuntes y código del Curso de Python Intermedio de Platzi
       - [Filter](#filter)
       - [Map](#map)
       - [Reduce](#reduce)
+    - [Clase 13. Proyecto: filtrando datos](#clase-13-proyecto-filtrando-datos)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -178,3 +179,24 @@ En el siguiente ejemplo se usa reduce para multiplicar todos los elementos de un
 **Explicación gráfica**
 
 ![Ejemplo gráfico de filter, map y reduce](https://i.ibb.co/tQQ7f4V/1-Dree-F8a4h2pvx-Rly39-Hj-AA.jpg)
+
+
+### Clase 13. Proyecto: filtrando datos
+
+**Unir diccionarios**
+
+*En versiones de Python > 3.5 y < 3.9*
+
+Se usa `**` en el diccionario original y en el que se va a concatenar
+
+```python
+old_people = list(map(lambda worker: {**worker, **{"old": worker["age"] > 70}}, DATA))
+```
+
+*En Python 3.9*
+
+Se usa el operador `|` entre el diccionario original y el que se va a concatenar
+
+```python
+old_people = list(map(lambda worker: worker | {"old": worker["age"] > 70}, DATA))
+```
