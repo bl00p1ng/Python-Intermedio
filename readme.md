@@ -1,6 +1,6 @@
 # Curso de Python Intermedio
 
-Apuntes y código del Curso de Python Intermedio
+Apuntes y código del Curso de Python Intermedio de Platzi
 
 [Repositorio Oficial del Curso](https://github.com/facmartoni/curso-intermedio-python)
 
@@ -16,6 +16,10 @@ Apuntes y código del Curso de Python Intermedio
     - [Clase 10. Dictionary comprehensions](#clase-10-dictionary-comprehensions)
   - [📚 Módulo 4. Conceptos avanzados de funciones](#-módulo-4-conceptos-avanzados-de-funciones)
     - [Clase 11. Funciones anónimas: lambda](#clase-11-funciones-anónimas-lambda)
+    - [Clase 12. High order functions: filter, map y reduce](#clase-12-high-order-functions-filter-map-y-reduce)
+      - [Filter](#filter)
+      - [Map](#map)
+      - [Reduce](#reduce)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -127,3 +131,50 @@ Dado que las funcione anónimas no tienen un identificador, para invocarlas se g
 _**Ejemplo:**_
 
 ![Ejemplo lambda](https://i.ibb.co/6HQBS6H/ejemplo-lambda.png)
+
+
+### Clase 12. High order functions: filter, map y reduce
+
+Una función de orden superior es *una función que recibe por parámetro otra función.*
+
+Existen 3 tipos de funciones de orden superior que son muy importantes en una gran cantidad de lenguajes de programación:
+
+#### Filter
+
+Como su nombre lo indica, permite filtrar los elementos de una lista en base a la condición que se defina en una función lambda. Básicamente lo que hace `filter()` es tomar por parámetro una función que devuelve true o false indicando si nos interesa el elemento o no, el segundo parámetro es el objeto iterable al que se quiere aplicar el "filtro".
+
+_**Ejemplo:**_
+
+En el siguiente ejemplo se usa `filter()` para filtrar una lista de números y obtener los números que son impares.
+
+![Ejemplo de filter](https://i.ibb.co/nMnSLs2/ejemplo-filter.png)
+
+#### Map
+
+Transforma los elementos de una lista, en base a una *función transformadora* que se le pasa por parámetro. A diferencia de `filter()`, `map()` siempre retorna la misma cantidad de elementos del array inicial independientemente de la transformación que apliquemos. Es posible también no modificar ningún elemento utilizando una *función de identidad* que no es más que una función que siempre devuelve su parámetro como resultado, así en vez de `a=>b` tenemos `a=>a`.
+
+_**Ejemplo:**_
+
+En el siguiente ejemplo se usa `map()` para elevar al cuadrado a cada uno de los números de una lista.
+
+![Ejemplo de map](https://i.ibb.co/gMQk1rC/ejemplo-map.png)
+
+#### Reduce
+
+Permite reducir los valores de una lista a un único valor. A diferencia de las funciones de orden superior anteriores esta necesita ser importada: 
+
+```python
+from functools import reduce
+```
+
+_**Ejemplo:**_
+
+En el siguiente ejemplo se usa reduce para multiplicar todos los elementos de una lista.
+
+![Ejemplo reduce](https://i.ibb.co/hBnPPGd/ejemplo-reduce.png)
+
+**ℹ Nota:** map, filter y reduce nunca modifican el array original, sino que devuelven una copia que debe ser almacenada en otra variable.
+
+**Explicación gráfica**
+
+![Ejemplo gráfico de filter, map y reduce](https://i.ibb.co/tQQ7f4V/1-Dree-F8a4h2pvx-Rly39-Hj-AA.jpg)
