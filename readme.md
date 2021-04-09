@@ -25,6 +25,7 @@ Apuntes y código del Curso de Python Intermedio de Platzi
     - [Clase 14. Los errores en el código](#clase-14-los-errores-en-el-código)
       - [Syntax Error](#syntax-error)
       - [Exception](#exception)
+    - [Clase 15. Debugging](#clase-15-debugging)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -224,3 +225,12 @@ Ocurren cuando el código esta mal escribir. Por ejemplo si en lugar de escribir
 En este tipo de errores el código que esta antes de la excepción si se alcanza a ejecutar y dicha ejecución se interrumpe cuando se lanza una excepción. Cuando se "lanza" dicha dicha excepción Python muestra muestra un menaje de error llamado **traceback** que se lee de abajo hacia arriba.
 
 Si ocurre una excepción y esta no se maneja, Python "eleva" dicha excepción a un scope superior tratando de encontrar un punto en que se le haga manejo a la excepción. Si no lo encuentra muestra el Traceback.
+
+
+### Clase 15. Debugging
+
+Es una técnica que se usa para encontrar la fuente de los **errores de lógica** en el código. Estos son anomalías en el comportamiento del software que a diferencia de los errores de sintaxis y las excepciones, el interprete de Python no alerta sobre este tipo de errores pues estos no están relacionados con el lenguaje de programación sino con la implementación del algoritmo en el código.
+
+**Step Over:** ejecutar la línea que sigue.
+
+**Step Into:** permite "entrar" en una función para revisar su ejecución línea por línea.
