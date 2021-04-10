@@ -31,6 +31,9 @@ Apuntes y código del Curso de Python Intermedio de Platzi
       - [raise](#raise)
     - [Finally](#finally)
     - [Clase 18. Assert Statements](#clase-18-assert-statements)
+  - [📚 Módulo 6. Manejo de archivos](#-módulo-6-manejo-de-archivos)
+    - [Clase 19. ¿Cómo trabajar con archivos?](#clase-19-cómo-trabajar-con-archivos)
+      - [Modos de apertura](#modos-de-apertura)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -292,3 +295,30 @@ _**Ejemplo:**_
 ![Ejemplo assert](https://i.ibb.co/9ZHs7WH/ejemplo-assert.png)
 
 **ℹ Nota:** `isnumeric()` es un método que evaluá si un string es algún tipo de número. Si es así retorna True, de lo contrario retorna False.
+
+
+## 📚 Módulo 6. Manejo de archivos
+
+### Clase 19. ¿Cómo trabajar con archivos?
+
+Por general al trabajar con archivos en Python se trabaja con archivos de texto, no archivos binarios.
+
+#### Modos de apertura
+
+![Modos de apertura](https://i.ibb.co/JypF8zb/modos-de-apertura.png)
+
+**R:** permite obtener el contenido de un archivo
+
+**W:** lo que hace es borrar el archivo anterior y reemplazarlo con el archivo modificado.
+
+**A:** en lugar de sobrescribir el archivo lo que hace es agregar las modificaciones al final.
+
+**Sintaxis**
+
+```python
+with open('./path/to/archive', 'r') as f:
+```
+
+`with` es lo que se conoce en Python como un **manejador contextual**. Lo que hace es controlar el flujo del archivo para que en caso de que el programa se cierre abruptamente el archivo no se dañe.
+
+`as` permite darle un "alias" al archivo para usarlo de forma más sencilla en el código.
