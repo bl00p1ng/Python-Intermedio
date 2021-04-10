@@ -30,6 +30,7 @@ Apuntes y código del Curso de Python Intermedio de Platzi
       - [Try/Except](#tryexcept)
       - [raise](#raise)
     - [Finally](#finally)
+    - [Clase 18. Assert Statements](#clase-18-assert-statements)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -274,4 +275,20 @@ _**Ejemplo:**_
 `finally` se ejecuta sin importar que ocurra o no una excepción, además no se usa mucho.
 
 
+### Clase 18. Assert Statements
 
+Es una forma de combinar el manejo de excepciones con el control del flujo del programa. El funcionamiento de `assert` es el siguiente:
+
+![Funcionamiento assert](https://i.ibb.co/0j51cMR/funcionamiento-assert.png)
+
+**Sintaxis**
+
+```python
+assert <condition>, <error message>
+```
+
+_**Ejemplo:**_
+
+![Ejemplo assert](https://i.ibb.co/9ZHs7WH/ejemplo-assert.png)
+
+**ℹ Nota:** `isnumeric()` es un método que evaluá si un string es algún tipo de número. Si es así retorna True, de lo contrario retorna False.

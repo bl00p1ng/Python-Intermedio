@@ -1,7 +1,7 @@
 def divisors(num):
     try:
         if num < 1:
-            raise ValueError('⚠ Debes ingresar un número positivo')            
+            raise ValueError('⚠ Debes ingresar un número positivo')
         else:
             divisors = [i for i in range(1, num + 1) if num % i == 0]
             return divisors
