@@ -34,6 +34,7 @@ Apuntes y código del Curso de Python Intermedio de Platzi
   - [📚 Módulo 6. Manejo de archivos](#-módulo-6-manejo-de-archivos)
     - [Clase 19. ¿Cómo trabajar con archivos?](#clase-19-cómo-trabajar-con-archivos)
       - [Modos de apertura](#modos-de-apertura)
+    - [Clase 20. Trabajando con archivos de texto en Python](#clase-20-trabajando-con-archivos-de-texto-en-python)
 
 ## 📚 Módulo 1. Preparación antes de empezar
 
@@ -322,3 +323,32 @@ with open('./path/to/archive', 'r') as f:
 `with` es lo que se conoce en Python como un **manejador contextual**. Lo que hace es controlar el flujo del archivo para que en caso de que el programa se cierre abruptamente el archivo no se dañe.
 
 `as` permite darle un "alias" al archivo para usarlo de forma más sencilla en el código.
+
+
+### Clase 20. Trabajando con archivos de texto en Python
+
+```python
+with open('./files/numbers.txt', 'r', encoding='utf-8') as f:
+```
+
+`encoding='utf-8'` estable la codificación del archivo para que no se visualicen mal símbolos como las tildes.
+
+Se pude recorrer cada línea de un archivo usando un ciclo for.
+
+```python
+numbers = []
+
+with open('./files/numbers.txt', 'r', encoding='utf-8') as f:
+    for line in f:
+        numbers.append(int(line))
+```
+También se pueden usar ciclos para escribir en cada línea de un archivo
+
+```python
+names = ['Andrés', 'Hana', 'Gabriela', 'Felipe']
+
+with open('./files/names.txt', 'w', encoding='utf-8') as f:
+    for name in names:
+        f.write(name)
+        f.write('\n')
+```
